@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import post from '../posts/code.md';
 ---
 
 <Layout title="2077 Collective Teaser Website">
@@ -15,14 +16,15 @@ import Layout from '../layouts/Layout.astro';
 			<a href="#abstract">abstract</a>
 			<a href="#motivation">motivation</a>
 			<a href="#specification">specification</a>
-			<a href="#backwards_compatibility">backwards compatibility</a>
 			<a href="#rationale">rationale</a>
+			<a href="#backwards_compatibility">backwards compatibility</a>
 			<a href="#security_considerations">security considerations</a>
+			<a href="#invitation">invitation</a>
 			<a href="#copyright">copyright</a>
 			<a href="#citation">citation</a>
 		</section>
 		<section class="flow heading">
-			<h1>A community driven initiative for the growth of Ethereum</h1>
+			<h1>A community driven initiative for defending Ethereum's brand</h1>
 			<img src="/hero.webp" alt="">
 		</section>
 		<section class="flow tag">
@@ -31,7 +33,7 @@ import Layout from '../layouts/Layout.astro';
 				<li><span><img src="/review.svg" alt=""></span>Standard Track: Core</li>
 			</ul>
 			<ul class="info">
-				<li><span>author :</span> 2077 Collective <a href="">(@2077Collective)</a>, Sam Doe <a href="">(@SDoe)</a>, Eth Doe <a href="">(@ethdoe)</a></li>
+				<li><span>author :</span> 2077 Collective <a href="">(@2077Collective)</a></li>
 				<li><span>created on :</span> 24-06-2024</li>
 			</ul>
 			<ul class="icon">
@@ -51,59 +53,61 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 		<article class="flow hero">
 			<h2><a href="" id="abstract">Abstract</a></h2>
-			<p class="lede">Add a new tx type that sets the code for an EOA.</p>
-			<p>Nullam quis risus eget urna mollis ornare vel eu leo. With the proposal for the new standard, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p class="lede">This specification defines a community driven initiative for strengthening the security of the social layer of Ethereum and onboarding new users through social media marketing efforts.</p>
 			<h2><a href="" id="motivation">Motivation</a></h2>
-			<p>Aenean eu leo quam. <a href="http://example.com">Pellentesque ornare sem</a> lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-			<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
-			<blockquote>
-			  <q>Cras justo odio, dapibus ac facilisis in, egestas eget quam. <strong>Sed posuere</strong> consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</q>
-			</blockquote>
-			<h3>Sed posuere consectetur est at lobortis</h3>
-			<p>Fusce dapibus, <em>tellus ac cursus commodo</em>, tortor mauris condimentum nibh, ut <a href="http://example.com">esque nare sem</a> justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>
+				Other <a href="http://example.com">blockchains</a> such as Solana have a large social layer presence on X and other social media platforms, which actively work to strengthen the brands of their own blockchains. Despite being the largest smart contract enabled blockchain network in terms of market cap, users, Ethereum lacks a strong social media presence outside certain platforms such as Farcaster, with the defenders of the brand outnumbered by superior Solana shitposting.
+				As we wish to spread Ethereum and cypherpunk values to as large an audience as possible, there must be a coherent effort for the production and distribution of high-quality memes and other social layer messages. This effort must be proactive and reactive to be able to create new narratives while responding to existing critiques or narratives of other blockchain networks.
+			</p>
 			<h2><a href="" id="specification">Specification</a></h2>
-			<ul>
-			  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
-			  <li>Aliquam tincidunt mauris eu risus</li>
-			  <li>Vestibulum auctor dapibus neque</li>
-			</ul>
+			<p>
+				The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119.
+				We define the following smart contract interface, which SHOULD NOT be implemented:
+			</p>
 			<code>
-				<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam illo aspernatur. Id, sed voluptatem reprehender</span>
-				<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam illo aspernatur. Id, sed voluptatem reprehender</span>
-				<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam illo aspernatur. Id, sed voluptatem reprehender</span>
-				<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam illo aspernatur. Id, sed voluptatem reprehender</span>
-				<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam illo aspernatur. Id, sed voluptatem reprehender</span>
-				<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam illo aspernatur. Id, sed voluptatem reprehender</span>
-				<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam illo aspernatur. Id, sed voluptatem reprehender</span>
+				<p>
+				interface I2077Collective <br>
+				    /// SHOULD generate and poast a high quality banger <br>
+				    function poast() public; <br>
+				    /// SHOULD return https://discord.gg/mfYyNJbaU5 <br>
+				    function discord() public view returns (string memory); <br>
+				    /// MUST return @2077Collective <br>
+				    function twitter() public view returns (string memory); <br>
+
+				</p>
 			</code>
-			<p>Pellentesque habitant morbi tristique senectus et <a href="http://example.com">Pellentesque ornare sem</a> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-			<h2><a href="" id="backwards_compatibility">Backwards Compatibility</a></h2>
-			<p>Aenean eu leo quam. <a href="http://example.com">Pellentesque ornare sem</a> lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-			<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
-			<blockquote>
-			  <q>Cras justo odio, dapibus ac facilisis in, egestas eget quam. <strong>Sed posuere</strong> consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</q>
-			</blockquote>
-			
+			<p>
+				The <a href="https://2077.xyz">2077 Collective</a> SHALL produce and distribute high quality memes and threads about new Ethereum upgrades, updates on DeFi protocols, or other Ethereum-related content. Posts made by the 2077 Collective MUST NOT be cringe.
+			</p>
 			<h2><a href="" id="rationale">Rationale</a></h2>
-			<h3>Generic OrderData</h3>
-			<ul>
-			  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
-			  <li>Aliquam tincidunt mauris eu risus</li>
-			  <li>Vestibulum auctor dapibus neque</li>
-			</ul>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href="http://example.com">Pellentesque ornare sem</a>, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-			
+			<p>
+				A central organization for creating marketing for Ethereum, as a public good, will likely be more effective compared to the current architecturally decentralized approach due to increased coordination allowing for the creation and maintenance of a coherent brand.
+			</p>
+			<h2><a href="" id="backwards_compatibility">Backwards Compatibility</a></h2>
+			<p>
+				This EIP introduces backwards incompatible changes to Ethereum's social layer and must be accompanied by a cultural hard fork. The industry is required to prepare sufficiently for these changes to Ethereum's messaging and promotion.
+			</p>
 			<h2><a href="" id="security_considerations">Security Considerations</a></h2>
-			<p>Aenean eu leo quam. <a href="http://example.com">Pellentesque ornare sem</a> lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-			<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
-			
+			<p>
+				This change injects life into Ethereum's marketing engine and is projected to accelerate adoption, usage, and mindshare to significant levels. We foresee a fundamental vibe shift in the greatness of Ethereum as a result of EIP-2077.
+				Individuals suffering from etherphobia may experience intense bouts of cope, frustration, and liquidation as a result of prolonged exposure to new Ethereum bangers. Such individuals are advised to limit their exposure to Ethernauts, the 2077 Collective, and cryptocurrency in general.
+			</p>
+			<h2><a href="" id="invitation">Invitation</a></h2>
+			<ul>
+				<li>Join our Discord server <a href="">(https://discord.gg/mfYyNJbaU5)</a></li>
+				<li>Follow us on X <a href="">(https://x.com/2077Collective)</a></li>
+				<li>Be based</li>
+			</ul>
 			<h2><a href="" id="copyright">Copyright</a></h2>
 			<p>Copyright and related rights waived via <a href="">MIT</a></p>
-			
 			<h2><a href="" id="citation">Citation</a></h2>
-			<p>Please cite this document as:</p>
-			<p>Vitalik Buterin <a href="">(@vbuterin)</a>, Sam Wilson <a href="">(@SamWilsn)</a>, Ansgar Dietrichs <a href="">(@adietrichs)</a>, Matt Garnett <a href="">(@lightclient)</a>, "EIP-7702: Set EOA account code for one transaction [DRAFT]," Ethereum Improvement Proposals, no. 7702, May 2024.</p>
-		</article>
+			<p>
+				Please do not cite this document as:
+			</p>
+			<p>
+				Emmanuel Awosika <a href="">(@eawosikaa)</a>, Clairy Charles <a href="">(@claire__charles)</a>, Add names here?, "EIP-2077: A community driven initiative for defending Ethereum's brand," Not actually an EIP, no. 2077, May 2024. [Online serial]. Available: <a href="https://2077.xyz">https://2077.xyz</a>.
+			</p>
+			</article>
 		<section class="flow update">
 			<p>Last updated: 24-06-2024</p>
 		</section>
@@ -217,6 +221,11 @@ import Layout from '../layouts/Layout.astro';
 	.hero {
 		margin-block-end: 4rem;
 
+		ul {
+			display: grid;
+			row-gap: 0.6rem;
+		}
+
 		a {
 			padding: .2rem;
 			font-weight: 800;
@@ -237,6 +246,10 @@ import Layout from '../layouts/Layout.astro';
 			padding: 1.2rem;
 			background-color: rgb(231, 231, 231);
 			border-radius: 4px;
+			p {
+				font-size: 0.9rem;
+				font-weight: 800;
+			}
 
 			span {
 				font-size: .8rem;
