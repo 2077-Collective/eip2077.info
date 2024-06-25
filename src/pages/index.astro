@@ -24,8 +24,8 @@ import post from '../posts/code.md';
 			<a href="#citation">citation</a>
 		</section>
 		<section class="flow heading">
-			<h1>A community driven initiative for defending Ethereum's brand</h1>
-			<img src="/hero.webp" alt="">
+			<h1>EIP-2077: Ethereum's Marketing Department</h1>
+			<img src="/as.webp" alt="">
 		</section>
 		<section class="flow tag">
 			<ul class="main">
@@ -63,9 +63,9 @@ The 2077 Collective SHALL produce and distribute Ethereum-related content across
 			</p>
 			<h2><a href="" id="specification">Specification</a></h2>
 			<p>
-				The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119.
-				We define the following smart contract interface, which SHOULD NOT be implemented:
+				This specification defines a community-driven initiative to strengthen Ethereum's brand and onboard new users through coordinated marketing efforts. The newly formed 2077 Collective (a.k.a. Ethereum’s Unofficial Marketing Department™) rallies the social layer to defend and promote the Ethereum brand and fix the current lack of representation online.
 			</p>
+			
 			<code>
 				<p>
 				interface I2077Collective <br>
@@ -91,8 +91,7 @@ The 2077 Collective SHALL produce and distribute Ethereum-related content across
 			</p>
 			<h2><a href="" id="security_considerations">Security Considerations</a></h2>
 			<p>
-				This change injects life into Ethereum's marketing engine and is projected to accelerate adoption, usage, and mindshare to significant levels. We foresee a fundamental vibe shift in the greatness of Ethereum as a result of EIP-2077.
-				Individuals suffering from etherphobia may experience intense bouts of cope, frustration, and liquidation as a result of prolonged exposure to new Ethereum bangers. Such individuals are advised to limit their exposure to Ethernauts, the 2077 Collective, and cryptocurrency in general.
+				This change injects life into Ethereum's marketing engine and is projected to accelerate adoption, usage, and mindshare to significant levels. We foresee a fundamental vibe shift and increased awareness of Ethereum's greatness, awesomeness, and coolness of Ethereum as a result of EIP-2077. Individuals suffering from etherphobia may experience intense bouts of cope, frustration, and liquidation due to prolonged exposure to new Ethereum bangers. Such individuals are advised to limit their exposure to Ethernauts, the 2077 Collective, and cryptocurrency in general.
 			</p>
 			<h2><a href="" id="invitation">Invitation</a></h2>
 			<ul>
@@ -144,13 +143,10 @@ The 2077 Collective SHALL produce and distribute Ethereum-related content across
 	.heading {
     	max-width: 80ch;
     	margin-inline: auto;
-
-		img {
-			position: fixed;
-			z-index: -1;
-			top: 5%;
-			right: 0;
-		}
+		display: grid;
+		grid-template-columns: 1.5fr 0.5fr;
+		justify-content: start;
+		
 	}
 	.tag {
     	max-width: 80ch;
