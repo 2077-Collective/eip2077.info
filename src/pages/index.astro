@@ -27,8 +27,8 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 		<section class="flow tag">
 			<ul class="main">
-				<li>Review</li>
-				<li>Standard Track: Core</li>
+				<li><span><img src="/design.svg" alt=""></span>Review</li>
+				<li><span><img src="/review.svg" alt=""></span>Standard Track: Core</li>
 			</ul>
 			<ul class="info">
 				<li><span>author :</span> 2077 Collective <a href="">(@2077Collective)</a>, Sam Doe <a href="">(@SDoe)</a>, Eth Doe <a href="">(@ethdoe)</a></li>
@@ -167,6 +167,12 @@ import Layout from '../layouts/Layout.astro';
 		.main {
 			display: flex;
 			column-gap: 0.4rem;
+
+			li {
+				display: flex;
+				align-items: center;
+				column-gap: 0.2rem;
+			}
 			
 			li:nth-child(1) {
 					background-color: yellow;
