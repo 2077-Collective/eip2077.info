@@ -51,13 +51,13 @@
     --size-step-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
     --size-step-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
     --size-step-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
-    --size-step-4: clamp(2rem, 1.8478rem + 0.7609vi, 2.4375rem);
+    --size-step-4: clamp(1.4rem, 1.478rem + 0.7609vi, 2.4375rem);
   }
   
   body {
       background: var(--color-light);
       color: var(--color-dark);
-      padding: 2em;
+      padding: clamp(1rem, 0.6522rem + 1.7391vi, 2rem);
       font-family: 'avenir-book', sans-serif;
       font-size: var(--size-step-0);
       line-height: 1.7;
