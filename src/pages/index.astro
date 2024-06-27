@@ -210,13 +210,11 @@ import Layout from "../layouts/Layout.astro";
       </ul>
       <h2><a href="" id="specification">Specification</a></h2>
       <p>
-        The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”,
-        “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this
-        document are to be interpreted as described in RFC 2119. We define the
-        following operations, which should be implemented by members of the 2077
-        Collective (Ethernauts):
+		The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119. The 2077 Collective SHALL produce and distribute Ethereum-related content across various formats (video, podcasts, social media posts, blogs, articles, and more) and channels. Content created and disseminated by the 2077 Collective MUST NOT be cringe.
       </p>
-      <p>Operation Market Ethereum</p>
+	  <p>We further define a set of Ethereum marketing functions that SHOULD be implemented by all members of the Ethereum community (including members of the 2077 Collective, a.k.a., `Ethernauts`). A verbose description of the specification is provided later in this document. </p>
+	  <p>pragma solidity ^0.14.0;</p>
+	  <p>Operation Market Ethereum</p>
       <p>MIT-License</p>
       <p>This specification defines…</p>
       <p>Pragma</p>
@@ -232,11 +230,11 @@ import Layout from "../layouts/Layout.astro";
                 <p class="function">fillMarketingGap()</p>
               </div>
               <div>
-                <span>Role:</span>
+                <span>Description:</span>
                 <p>Fill the marketing and mindset gap in Ethereum</p>
               </div>
               <div>
-                <span>Description:</span>
+                <span>Comments:</span>
                 <p>
                   Establish consensus on core Ethereum marketing problems.
                   Create public good infrastructure to tackle marketing
@@ -249,19 +247,32 @@ import Layout from "../layouts/Layout.astro";
             <li>
               <div>
                 <span>Function ID:</span>
-                <p>fillMarketingGap()</p>
-              </div>
-              <div>
-                <span>Role:</span>
-                <p>Fill the marketing and mindset gap in Ethereum</p>
+                <p class="function">controlTheNarrative()</p>
               </div>
               <div>
                 <span>Description:</span>
+                <p>Focus Ethereum marketing efforts in the right description</p>
+              </div>
+              <div>
+                <span>Comments:</span>
                 <p>
-                  (Establish consensus on core Ethereum marketing problems.
-                  Create public good infrastructure to tackle marketing
-                  problems. Forge working relationships between Ethereum tech
-                  community and marketers.
+					Bring more people on-chain by showcasing innovative applications and projects. Increase % of developers and businesses building on-chain by publishing case studies and highlighting use-cases. Create tools and resources to onboard users, developers, and businesses to Ethereum.</p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <span>Function ID:</span>
+                <p class="function">correctTheFocus()</p>
+              </div>
+              <div>
+                <span>Description:</span>
+                <p>Focus Ethereum marketing efforts in the right description</p>
+              </div>
+              <div>
+                <span>Comments:</span>
+                <p>
+					Bring more people on-chain by showcasing innovative applications and projects. Increase % of developers and businesses building on-chain by publishing case studies and highlighting use-cases. Create tools and resources to onboard users, developers, and businesses to Ethereum.
                 </p>
               </div>
             </li>
@@ -269,39 +280,16 @@ import Layout from "../layouts/Layout.astro";
             <li>
               <div>
                 <span>Function ID:</span>
-                <p>fillMarketingGap()</p>
-              </div>
-              <div>
-                <span>Role:</span>
-                <p>Fill the marketing and mindset gap in Ethereum</p>
+                <p class="function">promoteEthereumBrand()</p>
               </div>
               <div>
                 <span>Description:</span>
+                <p>Proactively promote and defend the Ethereum brand</p>
+              </div>
+              <div>
+                <span>Comments:</span>
                 <p>
-                  (Establish consensus on core Ethereum marketing problems.
-                  Create public good infrastructure to tackle marketing
-                  problems. Forge working relationships between Ethereum tech
-                  community and marketers.
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div>
-                <span>Function ID:</span>
-                <p>fillMarketingGap()</p>
-              </div>
-              <div>
-                <span>Role:</span>
-                <p>Fill the marketing and mindset gap in Ethereum</p>
-              </div>
-              <div>
-                <span>Description:</span>
-                <p>
-                  (Establish consensus on core Ethereum marketing problems.
-                  Create public good infrastructure to tackle marketing
-                  problems. Forge working relationships between Ethereum tech
-                  community and marketers.
+					Use 2077 Collective to promote the Ethereum ecosystem—including Ethereum-adjacent projects and protocols—to drive adoption, mindshare, and investment. Market the full breadth of the Ethereum ecosystem and show what it has to offer. Educate users, builders, and businesses about the value proposition of Ethereum infrastructure.
                 </p>
               </div>
             </li>
@@ -590,13 +578,12 @@ import Layout from "../layouts/Layout.astro";
       }
 
 	  .function {
-		background-color: var(--leather-dark-normal);
+		background-color: var(--neutral-ink-dark-normal);
 		display: inline-block;
 		width: fit-content;
-		padding: .2rem .8rem;
-		color: var(--leather-default-normal);
-		border-radius: 4px;
-
+		padding: .1rem .4rem;
+		color: var(--semantic-green-dark-normal);
+		border-radius: 8px;
 	  }
 
       span {
