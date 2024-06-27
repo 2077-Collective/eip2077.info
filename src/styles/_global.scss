@@ -113,7 +113,7 @@
   }
   
   .flow > * + * {
-      margin-block-start: var(--flow-space, 1em);
+      margin-block-start: 2rem//var(--flow-space, 1em);
   }
   
   .flow > h1 {
