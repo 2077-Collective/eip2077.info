@@ -23,7 +23,7 @@
  <h1>EIP-2077 By 2077 Collective</h1>
 </div>
 
-[2077](https://eip2077.info) is a satirical introduction of the 2077 Collective, Ethereum's Unofficial Marketing Department. An operation to accelerate Ethereum mindshare, adoption, and growth through strategic brand marketing and promotion
+[EIP-2077](https://eip2077.info) is a satirical introduction of the 2077 Collective, Ethereum's Unofficial Marketing Department. An operation to accelerate Ethereum mindshare, adoption, and growth through strategic brand marketing and promotion
 
 
 ## Contributing to 2077 Collective
