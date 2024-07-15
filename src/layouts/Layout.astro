@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,63 +8,73 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="We are creatives,researchers,marketers, and developers all working to make Ethereum cool again" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/2077-logo-white.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<meta name="keywords" content="astro, seo, meta tags" />
-		<meta name="author" content="2077 Collective" />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content="We are creatives,researchers,marketers, and developers all working to make Ethereum cool again.
-		" />
-		<meta property="og:type" content="article">
-		<meta property="og:image" content="/og.png">
-		<meta name="twitter:card" content="twitter_image">
-		<meta property="og:url" content="{canonical_url}" />
-		<meta property="og:site_name" content="2077 Collective" />
-		<meta name="twitter:title" content={title} />
-		<meta name="twitter:description" content="We are creatives,researchers,marketers, and developers all working to make Ethereum cool again.
-		" />
-		<meta name="twitter:image" content="/twitter.svg" />
-		<meta name="twitter:card" content="summary" />
-		<script>
-			const button = document.querySelector("#btn");
-			const darkIcon = document.querySelector("#dark-icon");
-			const lightIcon = document.querySelector("#light-icon");
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="We are creatives,researchers,marketers, and developers all working to make Ethereum cool again"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/2077-logo-white.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="keywords" content="astro, seo, meta tags" />
+    <meta name="author" content="2077 Collective" />
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="We are creatives,researchers,marketers, and developers all working to make Ethereum cool again.
+		"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="/og.png" />
+    <meta name="twitter:card" content="twitter_image" />
+    <meta property="og:url" content="{canonical_url}" />
+    <meta property="og:site_name" content="2077 Collective" />
+    <meta name="twitter:title" content={title} />
+    <meta
+      name="twitter:description"
+      content="We are creatives,researchers,marketers, and developers all working to make Ethereum cool again.
+		"
+    />
+    <meta name="twitter:image" content="/twitter.svg" />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      const button = document.querySelector("#btn");
+      const darkIcon = document.querySelector("#dark-icon");
+      const lightIcon = document.querySelector("#light-icon");
 
-			const theme = () => {
-			const darkMode = document.documentElement.classList.contains('dark-mode');
+      const theme = () => {
+        const darkMode =
+          document.documentElement.classList.contains("dark-mode");
 
-			if (darkMode) {
-				darkIcon.classList.remove('block');
-				darkIcon.classList.add('hidden');
-				lightIcon.classList.remove('hidden');
-				lightIcon.classList.add('block');
-				
-			} else {
-				darkIcon.classList.add('block');
-				darkIcon.classList.remove('hidden');
-				lightIcon.classList.add('hidden');
-				lightIcon.classList.remove('block');
-			}}
+        if (darkMode) {
+          darkIcon.classList.remove("block");
+          darkIcon.classList.add("hidden");
+          lightIcon.classList.remove("hidden");
+          lightIcon.classList.add("block");
+        } else {
+          darkIcon.classList.add("block");
+          darkIcon.classList.remove("hidden");
+          lightIcon.classList.add("hidden");
+          lightIcon.classList.remove("block");
+        }
+      };
 
-			btn.addEventListener('click', () => {
-				 document.documentElement.classList.toggle('dark-mode');
-				theme();
-			})
+      btn.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark-mode");
+        theme();
+      });
 
-			theme();
-		</script>
-	</head>
-	<body>
-		<slot />
-	</body>
+      theme();
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style lang="scss" is:global>
-	@import "../styles/_fonts.scss";
-	@import "../styles/_global.scss";
-	@import "../styles/_reset.scss";
+  @import "../styles/_fonts.scss";
+  @import "../styles/_global.scss";
+  @import "../styles/_reset.scss";
 </style>
