@@ -30,6 +30,12 @@ const { title } = Astro.props;
 		" />
 		<meta name="twitter:image" content="/twitter.svg" />
 		<meta name="twitter:card" content="summary" />
+		<script>
+			const button = document.querySelector("btn");
+			btn.addEventListener('click', () => {
+				 document.documentElement.classList.toggle('dark-mode');
+			})
+		</script>
 	</head>
 	<body>
 		<slot />
