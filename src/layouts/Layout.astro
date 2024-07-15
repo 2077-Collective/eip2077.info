@@ -31,10 +31,32 @@ const { title } = Astro.props;
 		<meta name="twitter:image" content="/twitter.svg" />
 		<meta name="twitter:card" content="summary" />
 		<script>
-			const button = document.querySelector("btn");
+			const button = document.querySelector("#btn");
+			const darkIcon = document.querySelector("#dark-icon");
+			const lightIcon = document.querySelector("#light-icon");
+
+			const theme = () => {
+			const darkMode = document.documentElement.classList.contains('dark-mode');
+
+			if (darkMode) {
+				darkIcon.classList.remove('block');
+				darkIcon.classList.add('hidden');
+				lightIcon.classList.remove('hidden');
+				lightIcon.classList.add('block');
+				
+			} else {
+				darkIcon.classList.add('block');
+				darkIcon.classList.remove('hidden');
+				lightIcon.classList.add('hidden');
+				lightIcon.classList.remove('block');
+			}}
+
 			btn.addEventListener('click', () => {
 				 document.documentElement.classList.toggle('dark-mode');
+				theme();
 			})
+
+			theme();
 		</script>
 	</head>
 	<body>
