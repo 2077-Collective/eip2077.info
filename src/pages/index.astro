@@ -2,13 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="EIP-2077 - 2077 Collective - Ethereum's Unofficial Marketing Department">
+<Layout
+  title="EIP-2077 - 2077 Collective - Ethereum's Unofficial Marketing Department"
+>
   <main>
     <section class="bg-slate-900 p-6 text-white text-center mb-4">
       <p>
-        EIP-2077[^1]
-        [^1]: Note: EIP-2077 is not an official EIP,
-        but rather a fictional/satirical example. It is not listed on the official EIP wiki page.
+        EIP-2077[^1] [^1]: Note: EIP-2077 is not an official EIP, but rather a
+        fictional/satirical example. It is not listed on the official EIP wiki
+        page.
       </p>
     </section>
     <header class="header">
@@ -33,7 +35,11 @@ import Layout from "../layouts/Layout.astro";
             ></a
           >
 
-          <a href="https://discord.gg/2077collective" target="_blank" class="cta">
+          <a
+            href="https://discord.gg/2077collective"
+            target="_blank"
+            class="cta"
+          >
             <svg
               width='36"'
               height="36"
@@ -48,6 +54,32 @@ import Layout from "../layouts/Layout.astro";
                 fill="black"></path></svg
             >
           </a>
+          <button
+            id="btn"
+            class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+          >
+            <svg
+              id="dark-icon"
+              class="fill-slate-700 block dark:hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              id="light-icon"
+              class="fill-yellow-500 hidden dark:block"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
@@ -78,14 +110,17 @@ import Layout from "../layouts/Layout.astro";
         <li>
           <span>requires:</span>
           <span class="eip"
-            ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">EIP-401</a
+            ><a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank">EIP-401</a
             ></span
           >
           <span class="eip"
             ><a
               href="https://hackmd.io/@pcaversaccio/the-ethereum-cypherpunk-manifesto"
               target="_blank">EIP-31624</a
-            ></span>
+            ></span
+          >
         </li>
       </ul>
     </section>
@@ -101,59 +136,85 @@ import Layout from "../layouts/Layout.astro";
       </p>
       <h2>Motivation</h2>
       <p>
-        The authors of this proposal have identified the following problems with Ethereum's marketing:
+        The authors of this proposal have identified the following problems with
+        Ethereum's marketing:
       </p>
       <ul class="marketing">
         <li>
           <span
             >Ethereum doesn’t have a marketing team but its competitors do.</span
           >
-		  This affects the Ethereum brand and negatively affects public sentiment, mindshare, and developer/user adoption.
-          There’s an established community of researchers and developers focused
-          on building and scaling Ethereum. But there’s no unified community focused
-          on promoting it. 
+           This affects the Ethereum brand and negatively affects public
+          sentiment, mindshare, and developer/user adoption. There’s an
+          established community of researchers and developers focused on
+          building and scaling Ethereum. But there’s no unified community
+          focused on promoting it.
         </li>
         <li>
           <span>Ethereum lacks a strong social media presence.</span>
-          Outside certain platforms such as Farcaster), defenders of the Ethereum
-          brand are outnumbered and outclassed by superior shitposting and shilling
-          from other L1 communities. Competing L1s dominate the discourse and create
-          the false perception of Ethereum as a "dead chain" where the community
-          of builders, users, and enthusiasts have disappeared into the ether.
+           Outside certain platforms such as Farcaster), defenders of the
+          Ethereum brand are outnumbered and outclassed by superior shitposting
+          and shilling from other L1 communities. Competing L1s dominate the
+          discourse and create the false perception of Ethereum as a "dead
+          chain" where the community of builders, users, and enthusiasts have
+          disappeared into the ether.
         </li>
         <li>
           <span>Ethereum underallocates to coordinated marketing.</span>
-          The Ethereum community takes a hands off approach—in the interests of decentralization and credible neutrality—and eschews coordinated promotion and marketing of Ethereum and Ethereum projects. However, the lack of a central organization coordinating efforts to market Ethereum leads to inconsistent, incoherent, and ineffective promotional campaigns for the protocol and ecosystem projects.
+           The Ethereum community takes a hands off approach—in the interests of
+          decentralization and credible neutrality—and eschews coordinated
+          promotion and marketing of Ethereum and Ethereum projects. However,
+          the lack of a central organization coordinating efforts to market
+          Ethereum leads to inconsistent, incoherent, and ineffective
+          promotional campaigns for the protocol and ecosystem projects.
         </li>
         <li>
           <span>Ethereum lacks strong voices and advocates.</span>
-          Builders and researchers are often too humble and would rather build in stealth than take up the task of advocating for Ethereum online and in meatspace. Excessive humility and aversion to self-promotion among Ethereans results in underappreciation of innovative projects in the Ethereum ecosystem and low interest in cutting-edge R&D work undertaken by core developers and researchers.
-		</li>
+           Builders and researchers are often too humble and would rather build
+          in stealth than take up the task of advocating for Ethereum online and
+          in meatspace. Excessive humility and aversion to self-promotion among
+          Ethereans results in underappreciation of innovative projects in the
+          Ethereum ecosystem and low interest in cutting-edge R&D work
+          undertaken by core developers and researchers.
+        </li>
       </ul>
       <h2>Specification</h2>
       <p>
-		The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119. The 2077 Collective SHALL produce and distribute Ethereum-related content across various formats (video, podcasts, social media posts, blogs, articles, and more) and channels. Content created and disseminated by the 2077 Collective MUST NOT be cringe.
+        The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”,
+        “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this
+        document are to be interpreted as described in RFC 2119. The 2077
+        Collective SHALL produce and distribute Ethereum-related content across
+        various formats (video, podcasts, social media posts, blogs, articles,
+        and more) and channels. Content created and disseminated by the 2077
+        Collective MUST NOT be cringe.
       </p>
-	  <p>We further define a set of Ethereum marketing functions that SHOULD be implemented by all members of the Ethereum community. Implementers MUST be based and serious about making Ethereum cool, great and fun again. A verbose description of the specification is provided later in this document.</p>
-	  
-	  
-	<div class="code">
+      <p>
+        We further define a set of Ethereum marketing functions that SHOULD be
+        implemented by all members of the Ethereum community. Implementers MUST
+        be based and serious about making Ethereum cool, great and fun again. A
+        verbose description of the specification is provided later in this
+        document.
+      </p>
 
-				<p id="block">
-				pragma solidity ^0.14.0; <br>
-					<br>
-			operation marketEthereum public () <br>
-					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function fillTheGap() external;<br><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function controlTheNarrative() external;<br>
-					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function correctTheFocus() external;<br>
-					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function promoteEthereumEcosystem() external;<br>
-					<br>
-				
-				</p>
-		</div>
+      <div class="code">
+        <p id="block">
+          pragma solidity ^0.14.0; <br />
+          <br />
+           operation marketEthereum public () <br />
+          <br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function fillTheGap() external;<br
+          /><br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function controlTheNarrative()
+          external;<br />
+          <br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function correctTheFocus() external;<br
+          />
+          <br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function promoteEthereumEcosystem()
+          external;<br />
+          <br />
+        </p>
+      </div>
       <div class="functionality">
         <code>
           <ul class="marketing">
@@ -168,14 +229,15 @@ import Layout from "../layouts/Layout.astro";
               </div>
               <div>
                 <span>Comments:</span>
-					<p>
-						- Establish consensus on core Ethereum marketing problems</p>
-						<p>
-							- Create public good infrastructure to tackle marketing
-                  problems</p>
-				  <p>
-					- Forge working relationships between Ethereum tech
-                  community and marketers</p>
+                <p>- Establish consensus on core Ethereum marketing problems</p>
+                <p>
+                  - Create public good infrastructure to tackle marketing
+                  problems
+                </p>
+                <p>
+                  - Forge working relationships between Ethereum tech community
+                  and marketers
+                </p>
               </div>
             </li>
 
@@ -191,13 +253,18 @@ import Layout from "../layouts/Layout.astro";
               <div>
                 <span>Comments:</span>
                 <p>
-						- Bring more people on-chain by showcasing innovative applications and projects</p>
-						<p>
-							- Increase % of developers and businesses building on-chain by publishing case studies and highlighting use-cases</p>
-				  <p>
-					- Forge working relationships between Ethereum tech
-                  community and marketers</p>
-				</div>
+                  - Bring more people on-chain by showcasing innovative
+                  applications and projects
+                </p>
+                <p>
+                  - Increase % of developers and businesses building on-chain by
+                  publishing case studies and highlighting use-cases
+                </p>
+                <p>
+                  - Forge working relationships between Ethereum tech community
+                  and marketers
+                </p>
+              </div>
             </li>
 
             <li>
@@ -211,17 +278,17 @@ import Layout from "../layouts/Layout.astro";
               </div>
               <div>
                 <span>Comments:</span>
-				<p>
-					- Bring more people on-chain by showcasing innovative Ethereum applications and projects.
-                </p>
-				
                 <p>
-					- Increase % of builders in the Ethereum ecosystem                </p>
+                  - Bring more people on-chain by showcasing innovative Ethereum
+                  applications and projects.
+                </p>
 
-					<p>
-						- Create tools + resources to onboard new users, developers, and businesses to Ethereum.                </p>
-				
-			
+                <p>- Increase % of builders in the Ethereum ecosystem</p>
+
+                <p>
+                  - Create tools + resources to onboard new users, developers,
+                  and businesses to Ethereum.
+                </p>
               </div>
             </li>
 
@@ -237,16 +304,19 @@ import Layout from "../layouts/Layout.astro";
               <div>
                 <span>Comments:</span>
                 <p>
-					- Use 2077 Collective to promote the Ethereum ecosystem—including Ethereum-adjacent projects and protocols—to drive adoption, mindshare, and investment.
+                  - Use 2077 Collective to promote the Ethereum
+                  ecosystem—including Ethereum-adjacent projects and
+                  protocols—to drive adoption, mindshare, and investment.
                 </p>
                 <p>
-					- Market the full breadth of the Ethereum ecosystem and show what it has to offer.                </p>
+                  - Market the full breadth of the Ethereum ecosystem and show
+                  what it has to offer.
+                </p>
 
-					<p>
-						- Educate users, builders, and businesses about the value proposition of Ethereum infrastructure.                </p>
-				
-					
-				
+                <p>
+                  - Educate users, builders, and businesses about the value
+                  proposition of Ethereum infrastructure.
+                </p>
               </div>
             </li>
           </ul>
@@ -254,59 +324,85 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <h2>Rationale</h2>
       <p>
-        If we wish to spread Ethereum and cypherpunk values to as many people as possible, there must be a coherent effort for the production and distribution of high-quality memes and content promoting Ethereum. This effort must be proactive and reactive to be able to create new narratives while responding to existing critiques or narratives of other blockchain networks. By proactively educating audiences about Ethereum’s value proposition, we can onboard new users, builders, business, and creators to the Ethereum ecosystem. 
-</p>
-<p>A community-wide effort to market and promote Ethereum must be coordinated for maximum effectiveness. A central entity like the 2077 Collective creating marketing for Ethereum as a public good will likely be more effective compared to the current architecturally decentralized approach due to increased coordination allowing for the creation and maintenance of a coherent brand. 
-</p>
-      <h2>
-        Backwards Compatibility
-      </h2>
+        If we wish to spread Ethereum and cypherpunk values to as many people as
+        possible, there must be a coherent effort for the production and
+        distribution of high-quality memes and content promoting Ethereum. This
+        effort must be proactive and reactive to be able to create new
+        narratives while responding to existing critiques or narratives of other
+        blockchain networks. By proactively educating audiences about Ethereum’s
+        value proposition, we can onboard new users, builders, business, and
+        creators to the Ethereum ecosystem.
+      </p>
+      <p>
+        A community-wide effort to market and promote Ethereum must be
+        coordinated for maximum effectiveness. A central entity like the 2077
+        Collective creating marketing for Ethereum as a public good will likely
+        be more effective compared to the current architecturally decentralized
+        approach due to increased coordination allowing for the creation and
+        maintenance of a coherent brand.
+      </p>
+      <h2>Backwards Compatibility</h2>
       <p>
         This EIP introduces backwards incompatible changes to Ethereum's social
         layer and must be accompanied by a cultural hard fork. The industry is
         required to prepare sufficiently for these changes to Ethereum's
         messaging and promotion.
       </p>
-      <h2>
-        Security Considerations
-      </h2>
+      <h2>Security Considerations</h2>
       <p>
         This change injects life into Ethereum's marketing engine and is
         projected to accelerate adoption, usage, and mindshare to significant
         levels. We foresee a fundamental vibe shift and increased awareness of
         Ethereum's greatness, awesomeness, and coolness of Ethereum as a result
-        of EIP-2077. Individuals suffering from <a href="https://www.urbandictionary.com/define.php?term=etherphobia" id="" target="_blank">etherphobia</a></h2> may experience
-        intense bouts of cope, frustration, and liquidation due to prolonged
-        exposure to new Ethereum bangers. Such individuals are advised to limit
-        their exposure to Ethernauts, the 2077 Collective, and cryptocurrency in
-        general.
-      </p>
-	  
-      <h2>Invitation</h2>
-      <ul> 
-        <li>
-          Join our Discord server <a href="https://discord.gg/mfYyNJbaU5">(https://discord.gg/mfYyNJbaU5)</a>
-        </li>
-        <li>Follow us on X <a href="https://twitter.com/2077Collective" target="_blank">(https://x.com/2077Collective)</a></li>
-        <li>Be based</li>
-      </ul>
-      <h2>Copyright</h2>
-      <p>Copyright and related rights waived via <a href="">MIT</a></p>
-      <h2>Citation</h2>
-      <p>Please do not cite this document as:</p>
-      <p>
-        Emmanuel Awosika <a href="https://x.com/eawosikaa" target="_blank">(@eawosikaa)</a>, Olly <a href="https://twitter.com/operator_xyz" target="_blank">(@operator_xyz)</a>, Lynett.eth <a href="https://twitter.com/Lynett0x"
-        target="_blank">(@Lynett0x)</a
-        >, and 2077 Collective <a href="https://twitter.com/2077Collective" target="_blank">(@2077Collective)</a>, "EIP-2077:
-        Ethereum Marketing Department," Not actually an EIP, no. 2077, May 2024.
-        [Online serial]. Available: <a class="" href=""
-          >XXXX.XXXX</a>.
-      </p>
+        of EIP-2077. Individuals suffering from <a
+          href="https://www.urbandictionary.com/define.php?term=etherphobia"
+          id=""
+          target="_blank">etherphobia</a
+        >
+      </p> may experience intense bouts of cope, frustration, and liquidation
+      due to prolonged exposure to new Ethereum bangers. Such individuals are
+      advised to limit their exposure to Ethernauts, the 2077 Collective, and
+      cryptocurrency in general.
     </article>
-    <section class="flow update">
-      <p>Last updated: 28-06-2024</p>
-    </section>
+
+    <h2>Invitation</h2>
+    <ul>
+      <li>
+        Join our Discord server <a href="https://discord.gg/mfYyNJbaU5"
+          >(https://discord.gg/mfYyNJbaU5)</a
+        >
+      </li>
+      <li>
+        Follow us on X <a
+          href="https://twitter.com/2077Collective"
+          target="_blank">(https://x.com/2077Collective)</a
+        >
+      </li>
+      <li>Be based</li>
+    </ul>
+    <h2>Copyright</h2>
+    <p>Copyright and related rights waived via <a href="">MIT</a></p>
+    <h2>Citation</h2>
+    <p>Please do not cite this document as:</p>
+    <p>
+      Emmanuel Awosika <a href="https://x.com/eawosikaa" target="_blank"
+        >(@eawosikaa)</a
+      >, Olly <a href="https://twitter.com/operator_xyz" target="_blank"
+        >(@operator_xyz)</a
+      >, Lynett.eth <a href="https://twitter.com/Lynett0x" target="_blank"
+        >(@Lynett0x)</a
+      >, and 2077 Collective <a
+        href="https://twitter.com/2077Collective"
+        target="_blank">(@2077Collective)</a
+      >, "EIP-2077: Ethereum Marketing Department," Not actually an EIP, no.
+      2077, May 2024. [Online serial]. Available: <a class="" href=""
+        >XXXX.XXXX</a
+      >.
+    </p>
   </main>
+  <section class="flow update">
+    <p>Last updated: 28-06-2024</p>
+  </section>
 </Layout>
 
 <style lang="scss">
@@ -338,7 +434,6 @@ import Layout from "../layouts/Layout.astro";
       width: 100%;
       padding: 1rem;
     }
-
 
     .social {
       display: none;
@@ -376,7 +471,7 @@ import Layout from "../layouts/Layout.astro";
     margin-inline: auto;
     border-bottom: 1px solid var(--color-dark);
     margin-block-end: 2rem;
-	  padding-block-end: 1rem;
+    padding-block-end: 1rem;
 
     ul {
       padding-inline-start: 0 !important;
@@ -484,66 +579,61 @@ import Layout from "../layouts/Layout.astro";
       }
     }
     .functionality {
-
       div {
       }
-	  code {
-      max-width: 92ch;
-      display: inline-grid;
-      row-gap: 0.4rem;
-      border: 1px solid var(--neutral-ink-default-normal);
-      border-radius: 4px;
-      p {
-        font-size: 1.2rem;
-      }
+      code {
+        max-width: 92ch;
+        display: inline-grid;
+        row-gap: 0.4rem;
+        border: 1px solid var(--neutral-ink-default-normal);
+        border-radius: 4px;
+        p {
+          font-size: 1.2rem;
+        }
 
-      ul {
-        padding-inline-start: 0;
-        margin: 0;
-      }
+        ul {
+          padding-inline-start: 0;
+          margin: 0;
+        }
 
-      li {
-        list-style-type: none;
-        padding-block: 1.6rem;
-        border-bottom: 2px solid var(--neutral-ink-default-normal);
+        li {
+          list-style-type: none;
+          padding-block: 1.6rem;
+          border-bottom: 2px solid var(--neutral-ink-default-normal);
 
-        div {
-          padding: .4rem .8rem;
-		  display: grid;
+          div {
+            padding: 0.4rem 0.8rem;
+            display: grid;
 
-		  &:nth-child(1) {
-			border-bottom: 1.6px dotted black;
-			padding-block-end: 1rem;
+            &:nth-child(1) {
+              border-bottom: 1.6px dotted black;
+              padding-block-end: 1rem;
+            }
+            &:nth-child(2) {
+              border-bottom: 1.6px dotted black;
+            }
+          }
+        }
 
-		  }
-		  &:nth-child(2) {
-			border-bottom: 1.6px dotted black;
+        .function {
+          background-color: var(--neutral-ink-dark-normal);
+          display: inline-block;
+          width: fit-content;
+          padding: 0.1rem 0.4rem;
+          color: var(--semantic-green-dark-normal);
+          border-radius: 8px;
+        }
 
-		  }
+        span {
+          font-size: 1rem;
         }
       }
-
-	  .function {
-		background-color: var(--neutral-ink-dark-normal);
-		display: inline-block;
-		width: fit-content;
-		padding: .1rem .4rem;
-		color: var(--semantic-green-dark-normal);
-		border-radius: 8px;
-	  }
-
-      span {
-        font-size: 1rem;
-      }
     }
-    }
-    
-	
   }
   #block {
-	background-color: var(--leather-default-active);
-	display: inline-block;
-	padding: 2rem 2rem; 
+    background-color: var(--leather-default-active);
+    display: inline-block;
+    padding: 2rem 2rem;
   }
   .update {
     max-width: 120ch;
@@ -553,10 +643,9 @@ import Layout from "../layouts/Layout.astro";
     border-bottom: 1.2px solid var(--color-dark);
   }
 
-
   .redacted {
-	background-color: black !important;
-	color: black !important;
-	pointer-events: none;
+    background-color: black !important;
+    color: black !important;
+    pointer-events: none;
   }
 </style>
