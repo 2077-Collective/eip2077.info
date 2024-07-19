@@ -39,38 +39,53 @@ const { title } = Astro.props;
     />
     <meta name="twitter:image" content="/twitter.svg" />
     <meta name="twitter:card" content="summary" />
-    <script>
-      const button = document.querySelector("#btn");
-      const darkIcon = document.querySelector("#dark-icon");
-      const lightIcon = document.querySelector("#light-icon");
-
-      const theme = () => {
-        const darkMode =
-          document.documentElement.classList.contains("dark-mode");
-
-        if (darkMode) {
-          darkIcon.classList.remove("block");
-          darkIcon.classList.add("hidden");
-          lightIcon.classList.remove("hidden");
-          lightIcon.classList.add("block");
-        } else {
-          darkIcon.classList.add("block");
-          darkIcon.classList.remove("hidden");
-          lightIcon.classList.add("hidden");
-          lightIcon.classList.remove("block");
+    <script is:inline>
+    const setTheme = () => {
+      const theme = (() => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
         }
-      };
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
 
-      btn.addEventListener("click", () => {
-        document.documentElement.classList.toggle("dark-mode");
-        theme();
-      });
+      if (theme === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
 
-      theme();
-    </script>
+      window.localStorage.setItem("theme", theme || "light");
+    };
+
+    setTheme();
+
+    document.addEventListener("astro:after-swap", setTheme);
+  </script>
   </head>
   <body>
     <slot />
+    <script is:inline>
+      const theme = () => {
+        let btn = document.querySelector("#btn");
+        const toggleDarkMode = () => {
+          document.documentElement.classList.toggle("dark");
+          const isDarkMode =
+            document.documentElement.classList.contains("dark");
+          localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+        };
+        btn.addEventListener("click", toggleDarkMode);
+      };
+
+      theme();
+
+      document.addEventListener("astro:after-swap", theme);
+    </script>
   </body>
 </html>
 <style lang="scss" is:global>

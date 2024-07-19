@@ -15,9 +15,10 @@ import Layout from "../layouts/Layout.astro";
     </section>
     <header class="header">
       <nav class="main_navigation">
-        <a href="/demo.html">
+        <a href="/demo.html" class="block dark dark:hidden">
           <img src="/logo.svg" alt="" />
         </a>
+        <a href="/demo.html" class="hidden light dark:block">2077 COLLECTIVE</a>
         <div class="social">
           <a href="https://x.com/2077Collective" target="_blank" class="cta">
             <svg
@@ -59,8 +60,7 @@ import Layout from "../layouts/Layout.astro";
             class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <svg
-              id="dark-icon"
-              class="fill-slate-700 block dark:hidden"
+              class="fill-slate-700 light block dark:hidden"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -69,8 +69,7 @@ import Layout from "../layouts/Layout.astro";
               ></path>
             </svg>
             <svg
-              id="light-icon"
-              class="fill-yellow-500 hidden dark:block"
+              class="fill-yellow-500 dark hidden dark:block"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -216,11 +215,11 @@ import Layout from "../layouts/Layout.astro";
         <code>
           <ul class="marketing">
             <li>
-              <div>
+              <div id="btm">
                 <span>Function ID:</span>
                 <p class="function">fillMarketingGap()</p>
               </div>
-              <div>
+              <div id="btm">
                 <span>Description:</span>
                 <p>Fill the marketing and mindset gap in Ethereum</p>
               </div>
@@ -239,11 +238,11 @@ import Layout from "../layouts/Layout.astro";
             </li>
 
             <li>
-              <div>
+              <div id="btm">
                 <span>Function ID:</span>
                 <p class="function">controlTheNarrative()</p>
               </div>
-              <div>
+              <div id="btm">
                 <span>Description:</span>
                 <p>Focus Ethereum marketing efforts in the right description</p>
               </div>
@@ -265,11 +264,11 @@ import Layout from "../layouts/Layout.astro";
             </li>
 
             <li>
-              <div>
+              <div id="btm">
                 <span>Function ID:</span>
                 <p class="function">correctTheFocus()</p>
               </div>
-              <div>
+              <div id="btm">
                 <span>Description:</span>
                 <p>Focus Ethereum marketing efforts in the right description</p>
               </div>
@@ -290,11 +289,11 @@ import Layout from "../layouts/Layout.astro";
             </li>
 
             <li>
-              <div>
+              <div id="btm">
                 <span>Function ID:</span>
                 <p class="function">promoteEthereumBrand()</p>
               </div>
-              <div>
+              <div id="btm">
                 <span>Description:</span>
                 <p>Proactively promote and defend the Ethereum brand</p>
               </div>
@@ -607,11 +606,11 @@ import Layout from "../layouts/Layout.astro";
             display: grid;
 
             &:nth-child(1) {
-              border-bottom: 1.6px dotted black;
+              border-bottom: 1.6px dotted var(--neutral-ink-default-normal);
               padding-block-end: 1rem;
             }
             &:nth-child(2) {
-              border-bottom: 1.6px dotted black;
+              border-bottom: 1.6px dotted var(--neutral-ink-default-normal);
             }
           }
         }
