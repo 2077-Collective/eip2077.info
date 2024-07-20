@@ -63,7 +63,7 @@ body {
   line-height: 1.7;
 }
 
-.dark-mode {
+.dark {
   body {
     background: var(--color-dark);
     color: var(--color-light);
@@ -73,6 +73,15 @@ body {
     .info a,
     #block {
       color: var(--color-dark);
+    }
+
+    .main_navigation {
+      background: var(--color-dark);
+      color: var(--color-light);
+    }
+
+    .cta svg path {
+      fill: white;
     }
   }
 }
