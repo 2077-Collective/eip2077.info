@@ -1,5 +1,5 @@
 :root {
-  --color-dark: #252525;
+  --color-dark: #020302;
   --color-light: #efefef;
   --color-primary: rgb(97, 172, 27);
   /*COLORS*/
@@ -57,10 +57,14 @@
 body {
   background: var(--color-light);
   color: var(--color-dark);
-  padding: clamp(1rem, 0.6522rem + 1.7391vi, 2rem);
+  //padding: clamp(1rem, 0.6522rem + 1.7391vi, 2rem);
   font-family: "avenir-book", sans-serif;
   font-size: var(--size-step-0);
   line-height: 1.7;
+
+  a {
+    color: #789d2c;
+  }
 }
 
 .dark {
@@ -69,10 +73,8 @@ body {
     color: var(--color-light);
 
     .hero h2,
-    .hero a,
-    .info a,
     #block {
-      color: var(--color-dark);
+      color: var(--color-light);
     }
 
     .main_navigation {
@@ -114,11 +116,7 @@ span,
 ul,
 li {
   font-family: "avenir-roman";
-}
-
-ul,
-ol {
-  padding-inline-start: 1em;
+  padding-inline-start: 0em;
 }
 
 li::marker {
@@ -140,7 +138,7 @@ blockquote {
 }
 
 .flow > * + * {
-  margin-block-start: 2rem; //var(--flow-space, 1em);;
+  margin-block-start: 1.2rem; //var(--flow-space, 1em);;
 }
 
 .flow > h1 {
@@ -163,8 +161,6 @@ blockquote {
 a {
   color: currentColor;
   text-decoration-color: var(--color-primary);
-  text-decoration-thickness: 0.3ex;
-  text-underline-offset: 0.3ex;
 }
 
 .lede {
